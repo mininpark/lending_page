@@ -1,0 +1,201 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+
+body { line-height: 100% }
+
+blockquote, q { quotes: none }
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul, ol, li { list-style-type: none }
+
+
+/* TYPOGRAPHY AND GENERAL STYLING */
+
+img {
+    vertical-align: top;
+}
+
+:root {
+    --main-text-color:#6e6e6e;
+    --sub-text-color: #989898;
+    --accent-color:#f93f1c;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Gentium Basic', serif;
+    background-color: #fff;
+    text-align: center;
+    color: --main-text-color;
+}
+
+hr {
+    width: 400px;
+}
+em {
+    color: var(--accent-color);
+    font-style: normal;
+}
+
+/* LAYOUT */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+label {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/* HEADER */
+header {
+
+    padding: 45px 0;
+    width: 100%;
+}
+
+a.logo {
+    background: url(../images/logo.png);
+    background-size: 72px 72px;
+
+    width: 72px; height: 72px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+h2.main {
+    line-height: 100%;
+    font-size: 32px;
+    margin: 50px 0;
+    color: var(--main-text-color);
+}
+p.header {
+    margin: 50px 0 5px;
+    color: var(--sub-text-color);
+    font-size: 22px;
+    line-height: 26px;
+}
+/* FORM */
+section.form {
+    background: url(../images/envelopes.png);
+    background-color:#6e6e6e;
+    height: 310px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .subscribe {
+    display: flex;
+    flex-direction: column;
+    line-height: 76px;
+    align-items: center;
+}
+input {
+    width: 306px;
+    height: 42px;
+    text-align: center;
+}
+input.btn {
+    background-color: #FB7961;
+    border: none;
+    color: #D5D5D5;
+}
+section .subscribe p{
+    color: #D5D5D5;
+}
+/* STATUS */
+.section_tt {
+    font-size: 22px;
+    color: var(--main-text-color);
+    line-height: 47px;
+    font-weight: 300;
+}
+
+.section_tt::before  {
+    content: "- ";
+}
+.section_tt::after  {
+    content: " -";
+}
+.status.container {
+    margin: 47px auto;
+}
+.status_box {
+    width: 100%;
+    background-image: url(../images/light-bg.jpg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 15px 15px;
+}
+.status_box .prog_box {
+    background-color: #BDD68A;
+    height: 110px;
+    width: 45%;
+    margin-right: 15px;
+}
+
+.status_box .prog_info * {
+    display:inline;
+}
+
+/* FREEBIE */
+section.freebie {
+    background-color: #6e6e6e;
+    color: var(--sub-text-color);
+
+    line-height: 22px;
+}
+section .freebie_title{
+    color: #fff;
+}
+section.freebie.container {
+    padding: 50px 50px;
+    height: 570px;
+}
+section.freebie.container img {
+    margin-top: 50px;
+}
+
+/*FOOTER*/
+footer {
+    padding: 50px 0;
+    margin-bottom: 100px;
+}

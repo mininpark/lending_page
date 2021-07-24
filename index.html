@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+	<meta charset="utf-8">
+	<title>Coming Soon Page</title>
+	<meta name="description" content="A simple and clean coming soon page made exclusively for a Tuts+ Premium Course">
+	<meta name="author" content="Mina>">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Stylesheets -->
+	<link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic' rel='stylesheet'>
+	<link rel="stylesheet" href="css/styles.css" />
+
+	<!-- Favicon and Apple Icons: 
+	What is Favicon https://sympli.io/blog/heres-everything-you-need-to-know-about-favicons-in-2020/
+	& Fabicon Generator https://www.favicon-generator.org/ -->
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- icons fontawesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+
+	<!-- JavaScript Jquery
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+	-->
+	<script src="custom.js" defer></script>
+
+</head>
+<body>
+	<header>
+		<h1><a href="index.html" class="logo" alt="logo"></a></h1>
+		<h2 class="main">Quill is an incredible product <br/>with an awesome description.</h2>
+		<hr/>
+		<p class="header">As you can see, it’s <em>not quite ready</em> yet, but you can sign up below <br>to be notified of our launch. <br>We’ll even throw in a <em>freebie</em> &colon;&rpar;</p>
+		<!--<em> for highlight-->
+	</header>
+
+	<!--form-->
+	<section class="form">
+		<form class="subscribe" action="#" method="POST"> 
+		<!--form has to have action with php eg. subscribe.php and method-->
+			<label for="userName">userName</label>
+			<input type="name" id="name" placeholder="name"/>
+			<label for="userEmail">userEamil</label>
+			<input type="email" id="email" placeholder="email address"/>
+			<p>	* I won't send you any spam emails, scout's honor!	</p>
+			<input type="submit" value="Get Notified" class="btn"/>
+		</form> 
+	</section>
+
+	<!--status-->
+	<section class="status container">
+		<h2 class="section_tt">Status Report</h2>
+		<div class="status_box"> <!--parent for progress box and info-->
+			<div class="prog_box"></div>
+			<div class="prog_info">
+				<h3>45%</h3> <!--number h3-->
+				<p>Just finished the blog design, <br/> not I’m designing the portfolio pages.</p>
+			</div>
+		</div>
+
+	</section>
+
+	<!--freebie-->
+	<section class="freebie container">
+		<h2 class="section_tt freebie_title">Did i hear... Freebie?</h2>
+		<p>Yes you did. We’ll give a free landing page template <br>to everyone who signs up using the form <br>at the <em>top</em>.</p>
+		<img src="images/freebie.png" alt="freebie image"/>
+	</section>
+
+	<footer>
+		<p class="footer_social">You can get in touch by sending us an <a href="mailto:abc@web.de"> email</a><br/>
+			or via social networks.</p>
+		<p class="social_network">
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+		</p>
+		<p class="copy">
+			&copy; Quill<br/>2013.
+		</p>
+	</footer>
+
+<a href="" class="nav_top"><i class="fas fa-arrow-up"></i></a>
+
+</body>
+
+</html>
