@@ -1,7 +1,14 @@
-var box = document.querySelector('.prog_box');
-var width = document.getElementById('.prog_box').offsetWidth
+let hover = document.getElementById('hover')
 
-window.onload = function(){
-    var box_size = document.getElementById(h3);
-    box_size.style.width = 70 + "%"
-}
+
+  // This handler will be executed every time the cursor
+  // is moved over a different list item
+hover.addEventListener("mouseover", function( event ) {
+    // highlight the mouseover target
+    event.target.style.background = "orange";
+  
+    // reset the color after a short delay
+    setTimeout(function() {
+      event.target.style.background = "";
+    }, 500);
+  }, false);
