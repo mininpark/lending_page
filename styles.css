@@ -203,11 +203,40 @@ footer {
     padding: 50px 0;
     margin-bottom: 100px;
 }
-footer .social_network a{
-    color: #fff;
-    background-color: var(--accent-color);  
-    width: 50px;      padding: 30px;
-}
-footer .social_network svg{
 
+footer .social_network {
+	margin: 54px 0;
 }
+footer .social_network a {
+	background: #f6604c; font-size: 24px; color: #fff; 
+    height: 50px; width: 50px;
+	display: inline-block;
+	transition: 0.4s;
+    margin-left: 10px;
+}
+footer .social_network a:hover {
+	background: #ebebeb; color: #f6604c;
+}
+.social_network svg {
+    transform: translateY(50%);
+}
+
+#myBtn {
+    /*display: none; Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--main-text-color); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 12px 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
